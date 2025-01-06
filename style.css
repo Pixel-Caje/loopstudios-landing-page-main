@@ -213,6 +213,24 @@ footer{
         .icons img:hover{
             cursor: pointer;
         }
+        .icons a {
+            display: inline-block;
+        }
+
+        .icons a::after {
+            content: '';
+            display: block;
+            width: 0;
+            height: 2px;
+            background: hsl(0, 0%, 55%);
+            transition: width 0.3s;
+            margin: 0 auto;
+        }
+
+        .icons a:hover::after {
+            width: 70%;
+        }
+        
     }
     .second{
         display: flex;
@@ -235,7 +253,7 @@ footer{
                 width: 0px;
                 height: 2px;
                 background: hsl(0, 0%, 55%);
-                transition: width 0.5s;
+                transition: width 0.3s;
                 margin: 0 auto;
             }
             li a:hover::after{
