@@ -24,57 +24,25 @@ header{
         display: flex;
         gap: 20px;
     }
-    /* .nav-links li a::before{
-        content: '';
-        position: absolute;
-        top: 79px;
-        width: 5px;
-        height: 2px;
-        background: white;
-    }
-    .nav-links li a.a::before{
-        margin: 0 1.2%;
-    }
-    .nav-links li a.c::before{
-        margin: 0 1.5%;
-    }
-    .nav-links li a.e::before{
-        margin: 0 1.2%;
-    }
-    .nav-links li a.p::before{
-        margin: 0 1.5%;
-    }
-    .nav-links li a.s::before{
-        margin: 0 1.4%;
-    }
-
-    .nav-links li a.a::after{
-        margin: 0 -1.4%;
-    }
-    .nav-links li a.c::after{
-        margin: 0 -1.8%;
-    }
-    .nav-links li a.e::after{
-        margin: 0 -1.7%;
-    }
-    .nav-links li a.p::after{
-        margin: 0 -2.3%;
-    }
-    .nav-links li a.s::after{
-        margin: 0 -2%;
-    }
-    .nav-links li a::after{
-        content: '';
-        position: absolute;
-        top: 79px;
-        width: 0px;
-        height: 2px;
-        background: white;
-    } */
     .nav-links li a{
         color: hsl(0, 0%, 100%);
         text-decoration: none;
     }
+    .nav-links li a::after {
+        content: '';
+        display: block;
+        width: 0;
+        height: 2px;
+        background: white;
+        transition: width 0.5s;
+        margin: 0 auto;
+    }
+
+    .nav-links li a:hover::after {
+        width: 100%;
+    }
+
+
     .imm{
         border: 2px solid hsl(0, 0%, 55%);
         width: 800px;
@@ -171,6 +139,11 @@ main{
                 color: hsl(0, 0%, 41%);
                 text-transform: uppercase;
             }
+            button:hover{
+                background: hsl(0, 0%, 41%);
+                color: white;
+                cursor: pointer;
+            }
         }
         .contain{
             display: flex;
@@ -237,6 +210,9 @@ footer{
         .icons img{
             padding: 0px 5px;
         }
+        .icons img:hover{
+            cursor: pointer;
+        }
     }
     .second{
         display: flex;
@@ -249,6 +225,21 @@ footer{
             li a{
                 text-decoration: none;
                 color: hsl(0, 0%, 55%);
+            }
+            li a:hover{
+                cursor: pointer;
+            }
+            li a::after{
+                content: '';
+                display: block;
+                width: 0px;
+                height: 2px;
+                background: hsl(0, 0%, 55%);
+                transition: width 0.5s;
+                margin: 0 auto;
+            }
+            li a:hover::after{
+                width: 70%;
             }
         }
     }
