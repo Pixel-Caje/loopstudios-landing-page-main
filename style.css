@@ -288,6 +288,52 @@ footer{
             font-size: 24px;
         }
     }
+    main{
+        .lead{
+            flex-direction: column;
+            align-items: center;
+            .inn{
+                margin: 0;
+                width: 400px;
+            }
+            img{
+                width: 490px;
+                height: 250px;
+            }
+            h1{
+                text-align: center;
+                font-size: 35px;
+            }
+            p{
+                text-align: center;
+                line-height: 2;
+            }
+        }
+
+        .creations{
+            width: 500px;
+            .create{
+                display: flex;
+                flex-direction: column;
+                h1{
+
+                }
+                button{
+                    position: relative;
+                    top: 110rem;
+                }
+            }
+            .contain{
+                display: flex;
+                flex-direction: column;
+                gap: 30px 30px;
+                .item{
+                    width: 500px;
+                    height: 200px;
+                }   
+            }
+        }
+    }
 }
 @media screen and (max-width: 360px) {
     header .imm{
