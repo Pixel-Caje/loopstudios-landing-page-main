@@ -143,6 +143,7 @@ main{
                 background: hsl(0, 0%, 41%);
                 color: white;
                 cursor: pointer;
+                transition: 0.5s;
             }
         }
         .contain{
@@ -294,7 +295,7 @@ footer{
             align-items: center;
             .inn{
                 margin: 0;
-                width: 400px;
+                width: 500px;
             }
             img{
                 width: 490px;
@@ -307,6 +308,7 @@ footer{
             p{
                 text-align: center;
                 line-height: 2;
+                font-size: 20px;
             }
         }
 
@@ -320,7 +322,11 @@ footer{
                 }
                 button{
                     position: relative;
-                    top: 110rem;
+                    top: 119rem;
+                    width: 150px;
+                    font-size: larger;
+                    padding: 10px;
+                    margin: auto;
                 }
             }
             .contain{
@@ -330,7 +336,93 @@ footer{
                 .item{
                     width: 500px;
                     height: 200px;
-                }   
+                    p{
+                        top: 100px;
+                        left: 30px;
+                        font-size: 30px;
+                        width: 200px;
+                        color: hsl(0, 0%, 100%);
+                        /* background: red; */
+                    }
+                    .deep{
+                        /* background: blue; */
+                        width: 100px;
+                    }
+                }  
+                .one{
+                    background-image: url(images/mobile/image-deep-earth.jpg);
+                    background-position: center;
+                }
+                .two{
+                    background-image: url(images/mobile/image-night-arcade.jpg);
+                    background-position: center;
+                }
+                .three{
+                    background-image: url(images/mobile/image-soccer-team.jpg);
+                    background-position: center;
+                }
+                .four{
+                    background-image: url(images/mobile/image-grid.jpg);
+                    background-position: center;
+                }
+                .five{
+                    background-image: url(images/mobile/image-from-above.jpg);
+                    background-position: center;
+                }
+                .six{
+                    background-image: url(images/mobile/image-pocket-borealis.jpg);
+                    background-position: center;
+                }
+                .seven{
+                    background-image: url(images/mobile/image-curiosity.jpg);
+                    background-position: center;
+                }
+                .eight{
+                    background-image: url(images/mobile/image-fisheye.jpg);
+                    background-position: center;
+                } 
+            }
+        }
+    }
+    footer{
+        padding: 40px 130px;
+        height: 500px;
+        .first{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            margin-bottom: 20px;
+            .icons{
+                margin: auto;
+            }
+            .icons img{
+                padding: 0px 5px;
+                position: relative;
+                top: 250px;
+            }
+            .icons img:hover{
+                cursor: pointer;
+            }
+            .icons a {
+                display: inline-block;
+            }
+        }
+        .second{
+            display: flex;
+            flex-direction: column;
+            height: 300px;
+            width: fit-content;
+            ul{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                font-size: 20px;
+                position: relative;
+                bottom: 20px;
+                margin: 0 auto;
+                /* li a{
+                    color: hsl(0, 0%, 100%);
+                } */
             }
         }
     }
